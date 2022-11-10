@@ -40,21 +40,25 @@
 }
 
 .nav-bottom {
+    height: 68px;
     background-color: #181f38;
     color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.nav-bottom img {
-    width: 55px;
+    margin: auto;
 }
 
 .nav-bottom>div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-bottom img {
+    width: 68px;
+}
+
+.nav-bottom>div>div {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -62,11 +66,11 @@
 }
 
 .nav-left {
-    width: 40%;
+    width: 50%;
 }
 
 .nav-right {
-    width: 35%;
+    width: 40%;
 }
 
 .nav-bottom button {
@@ -82,11 +86,11 @@
 }
 
 #start {
-    border: 1px solid #06ca5f;
+    border: 2px solid #06ca5f;
     background-color: #06ca5f;
     color: white;
     padding: 8px 20px;
-    border-radius: 7px;
+    border-radius: 6px;
 }
 
 .upArrow::after {
@@ -107,17 +111,74 @@
     margin-bottom: -1px;
 }
 
+#main {
+    background-color: #ebf5f3;
+    height: 1000px;
+}
+
 #firstSection {
     background-color: #181f38;
     background-image: url(https://web-static.wrike.com/cdn-cgi/image/width=3840,format=auto,quality=80/tp/storage/uploads/a6689dc7-598d-42e0-9856-339b302c27d5/rebrand-hero-illustration-homepage-screenshots-dark-desktop-2x.png);
     background-size: cover;
     background-position: right;
-    height: 620px;
+    height: 460px;
     width: 100%;
+    padding: 60px 0 100px;
+    margin-top: 113px;
 }
 
-#main {
-    height: 1000px;
-    margin-top: 113px;
-    background-color: #ebf5f3;
+#firstSection>div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+#firstSection h1 {
+    width: 600px;
+    height: 216px;
+    color: white;
+    font-size: 55px;
+}
+
+#firstSection p {
+    height: 64px;
+    width: 600px;
+    font-size: 20px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.align{
+    display: flex;
+    align-items: center;
+}
+
+#firstSection input {
+    height: 60px;
+    width: 308px;
+    border-radius: 6px;
+    border: none;
+    padding: 0px 0px 0px 20px;
+    font-size: 18px;
+}
+
+#firstSection button {
+    border: 1px solid #06ca5f;
+    background-color: #06ca5f;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 6px;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    margin-left: 12px;
+}
+
+.none {
+    display: none;
+}
+
+.none>img{
+    width: 100%;
 }
