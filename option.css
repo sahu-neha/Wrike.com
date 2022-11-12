@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "TT_Norms_Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+/* ----------------------NAV-BAR-START------------------- */
+
+
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+/* -----------------NAV-BAR-TOP-START---------------- */
+
+#nav-top {
+    display: flex;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    background-color: #51e8d4;
+    font-size: 14px;
+    font-family: "TT_Norms_Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+#nav-top>img {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 1.3%;
+}
+
+.close {
+    border: none;
+    background-color: #51e8d4;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#nav-top a {
+    color: black;
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+/* -----------------NAV-BAR-BOTTOM-START---------------- */
+
+.nav-bottom {
+    height: 68px;
+    background-color: #181f38;
+    color: white;
+    margin: auto;
+}
+
+.nav-bottom>div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-bottom img {
+    width: 68px;
+}
+
+#logoMain {
+    text-decoration: none;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.nav-bottom>div>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: small;
+}
+
+.nav-left {
+    width: 50%;
+}
+
+.nav-right {
+    width: 40%;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.nav-bottom button {
+    border: none;
+    background-color: #181f38;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+#login {
+    color: #06ca5f
+}
+
+#start {
+    border: 2px solid #06ca5f;
+    background-color: #06ca5f;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+}
+
+#login:hover {
+    background-color: #2b3857;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#hover:hover {
+    background-color: #2b3857;
+    cursor: pointer;
+}
+
+.upArrow::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-width: 1px 1px 0 0;
+    transition: transform 0.2s;
+    transform: rotate(135deg);
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.upArrow:hover::after {
+    transform: rotate(-45deg);
+    margin-bottom: 2px;
+}
+
+/* ----------------------NAV-BAR-END------------------- */
