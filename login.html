@@ -112,14 +112,15 @@
 <!--  ----------------script start------------------ -->
 
 <script>
+	document.querySelector("#logo").addEventListener("click", () => {
+		window.location.href = "index.html";
+	});
 	// ----------------redirect-function------------------//
 
 	window.addEventListener("load", () => {
 		let cred = JSON.parse(localStorage.getItem("cred"));
 		if (cred) {
-			setInterval(() => {
-				window.location.href = "index.html";
-			}, 1000);
+			window.location.href = "index.html";
 			localStorage.setItem("isLogin", true);
 		}
 	});
@@ -145,9 +146,7 @@
 		} else {
 			if (emailEntered == cred.email && passwordEntered == cred.password) {
 				console.log("Login successful");
-				setInterval(() => {
-					window.location.href = "index.html";
-				}, 1000);
+				window.location.href = "index.html";
 				localStorage.setItem("isLogin", true);
 			} else {
 				alert("Incorrect credentials");

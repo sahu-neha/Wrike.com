@@ -74,50 +74,29 @@ window.addEventListener("load", () => {
 		document.querySelector("#login").addEventListener("click", () => {
 			localStorage.removeItem("isLogin");
 			localStorage.removeItem("cred");
-			setInterval(() => {
-				window.location.href = "email.html";
-			}, 1000);
+			window.location.href = "email.html";
 		});
 	}
 });
 
 // ----------------Get-started-function------------------//
 
-// if (document.querySelector(".enteredEmail").value != "") {
-// 	document.querySelector("#linkEmail").addEventListener("click", () => {
-// 		window.location.href = "password.html";
-// 	});
-// } else {
-// 	document.querySelector("#linkEmail").addEventListener("click", () => {
-// 		window.location.href = "email.html";
-// 	});
-// }
-
-
 document.querySelector("#start").addEventListener("click", () => {
-	setInterval(() => {
-		window.location.href = "email.html";
-	}, 1000);
+	window.location.href = "email.html";
 });
 
 document.querySelector(".get").addEventListener("click", () => {
-	setInterval(() => {
-		window.location.href = "email.html";
-	}, 1000);
+	window.location.href = "email.html";
 });
 
 document.querySelector("#linkEmail").addEventListener("click", () => {
-	setInterval(() => {
-		window.location.href = "email.html";
-	}, 1000);
+	window.location.href = "email.html";
 });
 
 // -----------------LogIn-function------------------//
 
 document.querySelector("#login").addEventListener("click", () => {
-	setInterval(() => {
-		window.location.href = "login.html";
-	}, 1000);
+	window.location.href = "login.html";
 });
 
 if (window.innerWidth < 1080) {

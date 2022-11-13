@@ -7,7 +7,7 @@
 /* ----------------------NAV-BAR-START------------------- */
 
 
-#nav-bar {
+.nav-bar {
     position: fixed;
     width: 100%;
     top: 0;
@@ -47,6 +47,7 @@
 }
 
 /* -----------------NAV-BAR-BOTTOM-START---------------- */
+
 
 .nav-bottom {
     height: auto;
@@ -155,5 +156,91 @@
 
 main {
     background-color: #181f38;
+    margin-top: 125px;
+    color: white;
 }
 
+
+.section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.tabs {
+    width: 23%;
+    margin: auto;
+    padding: 0px 20px 0px 0px;
+}
+
+.tabs>p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #99a4bd;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+}
+
+.tabs>h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tabOptions {
+    padding: 20px 0px 10px;
+}
+
+.imgH3 {
+    display: flex;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.imgH3 img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.imgH3 h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.tabOptions p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-left: 44px;
+    margin-right: 20px;
+}
+
+/* .tabs:hover{
+    transition: 0.3s;
+} */
+
+.tabOptions:hover {
+    background-color: #2b3857;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+/* ----------------media queries--------------------- */
+
+@media screen and (max-width: 1024px) {
+    .section {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .tabs {
+        width: auto;
+        padding: 0px 20px;
+    }
+}

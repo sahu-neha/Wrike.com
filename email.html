@@ -116,6 +116,10 @@
 <!--  ----------------script start------------------ -->
 
 <script>
+	document.querySelector("#logo").addEventListener("click", () => {
+		window.location.href = "index.html";
+	});
+
 	// ----------------setting email to local-storage------------------//
 
 	let button = document.querySelector("button");
@@ -129,9 +133,7 @@
 			alert("Please enter your email");
 		} else {
 			localStorage.setItem("email", JSON.stringify(input));
-			setInterval(() => {
-				window.location.href = "password.html";
-			}, 1000);
+			window.location.href = "password.html";
 		}
 	});
 	// ----------------login-function-with-enter-key------------------//
