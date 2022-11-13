@@ -10,6 +10,7 @@
 			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" href="logo-removebg-preview.png" />
 	</head>
 
 	<body>
@@ -49,7 +50,7 @@
 							<button id="hover">Contact Sales</button>
 							<button id="hover">🌐En</button>
 							<button id="login">Log in</button>
-							<button id="start">Start for free</button>
+							<button id="start" class="start">Start for free</button>
 						</div>
 					</div>
 				</div>
@@ -75,7 +76,7 @@
 						</p>
 						<div class="align">
 							<input type="email" placeholder="Enter your business email" />
-							<button>Get Started</button>
+							<button id="linkEmail" class="start">Get Started</button>
 						</div>
 						<p id="green">
 							<svg
@@ -132,7 +133,7 @@
 
 			<div class="thirdSection">
 				<div>
-					<p>Transform the way your teams work</p>
+					<p class="transform">Transform the way your teams work</p>
 					<p>
 						Empower your teams to do the best work of their lives with 360°
 						visibility, true cross- <br />
@@ -141,10 +142,12 @@
 				</div>
 				<div class="grid">
 					<div>
-						<img
-							src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=224,dpr=1/tp/storage/uploads/f12bf685-64af-4413-a42e-80e58ed088ee/evo-icp-hp-ps-light.png"
-							alt=""
-						/>
+						<div>
+							<img
+								src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=224,dpr=1/tp/storage/uploads/f12bf685-64af-4413-a42e-80e58ed088ee/evo-icp-hp-ps-light.png"
+								alt=""
+							/>
+						</div>
 						<h2>
 							Professional <br />
 							Services
@@ -157,10 +160,12 @@
 						<h3>Learn more 🡢</h3>
 					</div>
 					<div>
-						<img
-							src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=224,dpr=1/tp/storage/uploads/8b283fef-6bd1-4513-8398-228095b64833/evo-icp-hp-marketing-light.png"
-							alt=""
-						/>
+						<div>
+							<img
+								src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=224,dpr=1/tp/storage/uploads/8b283fef-6bd1-4513-8398-228095b64833/evo-icp-hp-marketing-light.png"
+								alt=""
+							/>
+						</div>
 						<h2>Marketing</h2>
 						<p>
 							Empower your marketing team with customizable workflows, leading
@@ -170,10 +175,12 @@
 						<h3>Learn more 🡢</h3>
 					</div>
 					<div>
-						<img
-							src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=224,dpr=1/tp/storage/uploads/4486fa19-a0c3-4f16-8d12-60ddfefec7c8/evo-icp-hp-pm-light.png"
-							alt=""
-						/>
+						<div>
+							<img
+								src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=224,dpr=1/tp/storage/uploads/4486fa19-a0c3-4f16-8d12-60ddfefec7c8/evo-icp-hp-pm-light.png"
+								alt=""
+							/>
+						</div>
 						<h2>
 							Project <br />
 							Management
@@ -186,10 +193,12 @@
 						<h3>Learn more 🡢</h3>
 					</div>
 					<div>
-						<img
-							src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=224,dpr=1/tp/storage/uploads/0eadfaae-5c62-44fe-a375-cfdaab468ac0/evo-icp-hp-it-light.png"
-							alt=""
-						/>
+						<div>
+							<img
+								src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=224,dpr=1/tp/storage/uploads/0eadfaae-5c62-44fe-a375-cfdaab468ac0/evo-icp-hp-it-light.png"
+								alt=""
+							/>
+						</div>
 						<h2>IT</h2>
 						<p>
 							Meet workforce and delivery needs by optimizing agile IT
@@ -200,7 +209,7 @@
 					</div>
 				</div>
 				<h3>See all teams 🡢</h3>
-				<div class="get"><button>Get started</button></div>
+				<div class="get" class=""><button>Get started</button></div>
 			</div>
 
 			<!-------------- third-section-end ---------------->
@@ -301,8 +310,12 @@
 						required.
 					</p>
 					<div class="align" id="email">
-						<input type="email" placeholder="Enter your business email" />
-						<button>Get Started</button>
+						<input
+							class="enteredEmail"
+							type="email"
+							placeholder="Enter your business email"
+						/>
+						<button id="linkEmail" class="start">Get Started</button>
 					</div>
 				</div>
 

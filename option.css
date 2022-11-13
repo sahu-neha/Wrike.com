@@ -49,7 +49,7 @@
 /* -----------------NAV-BAR-BOTTOM-START---------------- */
 
 .nav-bottom {
-    height: 68px;
+    height: auto;
     background-color: #181f38;
     color: white;
     margin: auto;
@@ -64,7 +64,8 @@
 }
 
 .nav-bottom img {
-    width: 68px;
+    margin-top: 2px;
+    width: 65px;
 }
 
 #logoMain {
@@ -147,4 +148,12 @@
     margin-bottom: 2px;
 }
 
+
 /* ----------------------NAV-BAR-END------------------- */
+
+/* -------------------MAIN-START------------------ */
+
+main {
+    background-color: #181f38;
+}
+

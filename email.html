@@ -4,9 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Log In</title>
+		<title>Email</title>
 
 		<!--  ----------------CSS start------------------ -->
+
 		<style>
 			* {
 				margin: 0;
@@ -24,7 +25,7 @@
 				background-color: #fff;
 				margin: auto;
 				width: 460px;
-				height: 520px;
+				height: 460px;
 				text-align: center;
 				border-radius: 10px;
 				box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -83,18 +84,21 @@
 				color: #7f8186;
 			}
 		</style>
-		<!--  ----------------CSS start------------------ -->
+
+		<!--  ----------------CSS end------------------ -->
 	</head>
+
 	<!--  ----------------body start------------------ -->
+
 	<body>
 		<div id="box">
 			<img id="logo" src="logo.png" alt="" /><br />
+
 			<input type="email" placeholder="Email or corporate ID" /><br />
 
-			<input type="password" placeholder="Password" /><br />
-			<button>Log In</button><br />
+			<button>Next</button><br />
 			<a href="#">Forgot password</a><br /><br />
-			<a href="email.html">Don't have an account? Sign up here</a><br /><br />
+			<a href="login.html">Have multiple accounts? Log in here</a><br /><br />
 			<p>or log in with</p>
 			<div>
 				<a
@@ -112,53 +116,28 @@
 <!--  ----------------script start------------------ -->
 
 <script>
-	// ----------------redirect-function------------------//
-
-	window.addEventListener("load", () => {
-		let cred = JSON.parse(localStorage.getItem("cred"));
-		if (cred) {
-			setInterval(() => {
-				window.location.href = "index.html";
-			}, 1000);
-			localStorage.setItem("isLogin", true);
-		}
-	});
-
-	// ----------------getting email/password from local-storage and adding isLogin to the object------------------//
-
-	let cred = JSON.parse(localStorage.getItem("cred"));
-
-	// ----------------login-function------------------//
+	// ----------------setting email to local-storage------------------//
 
 	let button = document.querySelector("button");
 
-	button.addEventListener("click", (event) => {
-		event.preventDefault();
+	button.addEventListener("click", (el) => {
+		el.preventDefault();
 
-		let emailEntered = document.querySelector("input[type='email']").value;
-		let passwordEntered = document.querySelector(
-			"input[type='password']"
-		).value;
+		let input = document.querySelector("input[type='email']").value;
 
-		if (emailEntered == "" || passwordEntered == "") {
-			alert("Please enter your credentials");
+		if (input == "") {
+			alert("Please enter your email");
 		} else {
-			if (emailEntered == cred.email && passwordEntered == cred.password) {
-				console.log("Login successful");
-				setInterval(() => {
-					window.location.href = "index.html";
-				}, 1000);
-				localStorage.setItem("isLogin", true);
-			} else {
-				alert("Incorrect credentials");
-			}
+			localStorage.setItem("email", JSON.stringify(input));
+			setInterval(() => {
+				window.location.href = "password.html";
+			}, 1000);
 		}
 	});
-
 	// ----------------login-function-with-enter-key------------------//
 
 	document
-		.querySelector("input[type='password']")
+		.querySelector("input[type='email']")
 		.addEventListener("keypress", (el) => {
 			if (el.key == "Enter") {
 				button.click();
@@ -166,4 +145,5 @@
 			}
 		});
 </script>
+
 <!--  ----------------script end------------------ -->
