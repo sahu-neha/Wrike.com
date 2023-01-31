@@ -9,15 +9,15 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
 		/>
-		<link rel="stylesheet" href="option.css" />
-		<link rel="icon" href="logo-removebg-preview.png" />
+		<link rel="stylesheet" href="css/option.css" />
+		<link rel="icon" href="img/logo-removebg-preview.png" />
 	</head>
 
 	<body>
 		<header>
 			<div class="nav-bar">
 				<div id="nav-top">
-					<img src="nav-bar-top.png" alt="flash" />
+					<img src="img/nav-bar-top.png" alt="flash" />
 					<p>
 						<a href="https//">Meet Wrike Lightspeed</a>: the most powerful work
 						management platform that will put you <i>light-years</i> ahead of
@@ -32,7 +32,7 @@
 					<div>
 						<div class="nav-left">
 							<a id="logoMain" href="index.html"
-								><img src="logo.png" alt="logo"
+								><img src="img/logo.png" alt="logo"
 							/></a>
 
 							<button class="upArrow thisPage" id="hover">
@@ -231,23 +231,5 @@
 		</main>
 	</body>
 	<!-------------- nav-bar-end ---------------->
-	<script>
-		document.querySelector("#start").addEventListener("click", () => {
-			window.location.href = "email.html";
-		});
-
-		document.querySelector("#login").addEventListener("click", () => {
-			window.location.href = "login.html";
-		});
-
-		// <!-------------- nav-bar-close-button ---------------->
-
-		let btn = document.querySelector(".close");
-
-		btn.onclick = () => {
-			btn.parentElement.remove();
-			console.log("click");
-			document.querySelector("main").style.marginTop = "68px";
-		};
-	</script>
+	<script src="js/resources.js"></script>
 </html>

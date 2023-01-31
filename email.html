@@ -7,83 +7,7 @@
 		<title>Email</title>
 
 		<!--  ----------------CSS start------------------ -->
-
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-				font-family: "TT_Norms_Pro", -apple-system, BlinkMacSystemFont,
-					"Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans",
-					"Droid Sans", Ubuntu, Cantarell, Arial, sans-serif,
-					"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-			}
-			body {
-				background-color: #f0f2f6;
-			}
-
-			#box {
-				background-color: #fff;
-				margin: auto;
-				width: 460px;
-				height: 460px;
-				text-align: center;
-				border-radius: 10px;
-				box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-				margin-top: 100px;
-			}
-
-			#logo {
-				width: 14%;
-				margin: 40px 0px 30px;
-				border-radius: 6px;
-			}
-
-			input {
-				width: 370px;
-				height: 48px;
-				background-color: #edf1f6;
-				color: #1e2126;
-				border: 1px solid white;
-				border-radius: 12px;
-				line-height: 24px;
-				margin-bottom: 20px;
-				font-size: 18px;
-				padding-left: 10px;
-			}
-
-			input:hover {
-				border: 1px solid #627390;
-				transition: 0.1s;
-			}
-
-			button {
-				width: 380px;
-				height: 48px;
-				font-size: 18px;
-				border-radius: 12px;
-				line-height: 24px;
-				border: 1px solid white;
-				color: white;
-				background-color: #008260;
-				margin-bottom: 20px;
-			}
-
-			button:hover {
-				cursor: pointer;
-				border: 1px solid white;
-				background-color: #006358;
-			}
-
-			a {
-				text-decoration: none;
-				font-size: 14px;
-			}
-
-			p {
-				font-size: 14px;
-				color: #7f8186;
-			}
-		</style>
+		<link rel="stylesheet" href="css/email.css" />
 
 		<!--  ----------------CSS end------------------ -->
 	</head>
@@ -92,7 +16,7 @@
 
 	<body>
 		<div id="box">
-			<img id="logo" src="logo.png" alt="" /><br />
+			<img id="logo" src="img/logo.png" alt="" /><br />
 
 			<input type="email" placeholder="Email or corporate ID" /><br />
 
@@ -115,37 +39,6 @@
 
 <!--  ----------------script start------------------ -->
 
-<script>
-	document.querySelector("#logo").addEventListener("click", () => {
-		window.location.href = "index.html";
-	});
-
-	// ----------------setting email to local-storage------------------//
-
-	let button = document.querySelector("button");
-
-	button.addEventListener("click", (el) => {
-		el.preventDefault();
-
-		let input = document.querySelector("input[type='email']").value;
-
-		if (input == "") {
-			alert("Please enter your email");
-		} else {
-			localStorage.setItem("email", JSON.stringify(input));
-			window.location.href = "password.html";
-		}
-	});
-	// ----------------login-function-with-enter-key------------------//
-
-	document
-		.querySelector("input[type='email']")
-		.addEventListener("keypress", (el) => {
-			if (el.key == "Enter") {
-				button.click();
-				console.log("click");
-			}
-		});
-</script>
+<script src="js/email.js"></script>
 
 <!--  ----------------script end------------------ -->
